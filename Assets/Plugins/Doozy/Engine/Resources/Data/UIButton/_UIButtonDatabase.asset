@@ -16,5 +16,7 @@ MonoBehaviour:
   CategoryNames:
   - Custom
   - General
+  - Setting
   Categories:
   - {fileID: 11400000, guid: 80116f6cd2b07574ab4810f61206081b, type: 2}
+  - {fileID: 11400000, guid: 3b2d1cf4d91a470459b31c38a57983b2, type: 2}

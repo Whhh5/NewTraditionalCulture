@@ -105,10 +105,16 @@ MonoBehaviour:
   m_id: 9e3f3447-d369-4e3c-8a91-7babb5e04bf3
   m_name: UI Gameing Level 1
   m_notes: 
-  m_onEnterShowViews: []
+  m_onEnterShowViews:
+  - Category: General
+    InstantAction: 0
+    Name: Gaming
   m_onEnterHideViews: []
   m_onExitShowViews: []
-  m_onExitHideViews: []
+  m_onExitHideViews:
+  - Category: General
+    InstantAction: 0
+    Name: Gaming
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +137,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: 977f4532-0d9b-45e0-8f63-25b0048d7d46
-  m_lastModified: 132890237404392557
+  m_lastModified: 132892390887458581
 --- !u!114 &4374146353271936323
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -184,8 +190,8 @@ MonoBehaviour:
   m_useUpdate: 0
   m_height: 80
   m_width: 120
-  m_x: -108
-  m_y: -108
+  m_x: -132
+  m_y: -252
   m_minimumInputSocketsCount: 1
   m_minimumOutputSocketsCount: 1
   m_graphId: 977f4532-0d9b-45e0-8f63-25b0048d7d46
@@ -277,7 +283,7 @@ MonoBehaviour:
     m_id: 9cbbb01d-57a6-4895-9002-9bb1dbd8b3e9
     m_nodeId: 7afa860a-65ed-4918-bc7b-33261e8f743e
     m_socketName: OutputSocket_1
-    m_value: '{"ButtonCategory":"General","ButtonName":"Unnamed","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_value: '{"ButtonCategory":"General","ButtonName":"Unnamed","GameEvent":"","TimeDelay":3.0,"Trigger":4}'
     m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, DoozyEngine,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_nodeType: 4
@@ -287,11 +293,11 @@ MonoBehaviour:
   m_debugMode: 0
   m_useFixedUpdate: 0
   m_useLateUpdate: 0
-  m_useUpdate: 0
+  m_useUpdate: 1
   m_height: 152
   m_width: 216
-  m_x: 108
-  m_y: 24
+  m_x: 84
+  m_y: -48
   m_minimumInputSocketsCount: 1
   m_minimumOutputSocketsCount: 1
   m_graphId: 977f4532-0d9b-45e0-8f63-25b0048d7d46
@@ -301,13 +307,13 @@ MonoBehaviour:
   m_onEnterShowViews:
   - Category: General
     InstantAction: 0
-    Name: Main Menu
+    Name: Start
   m_onEnterHideViews: []
-  m_onExitShowViews:
+  m_onExitShowViews: []
+  m_onExitHideViews:
   - Category: General
     InstantAction: 0
-    Name: Main Menu
-  m_onExitHideViews: []
+    Name: Start
 --- !u!114 &8607109007064832853
 MonoBehaviour:
   m_ObjectHideFlags: 1

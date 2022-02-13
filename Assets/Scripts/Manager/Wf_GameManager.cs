@@ -4,7 +4,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using Wf_Assist_Cs;
 
-public class Fw_GameManager : Wf_SingletonPattern_Mono<Fw_GameManager>
+public class Wf_GameManager : Wf_SingletonPattern_Mono<Wf_GameManager>
 {
     [TitleGroup("PlayerDate")]
     [HorizontalGroup("PlayerDate/Group_1", Width = 0.5f, LabelWidth = 50)]
@@ -15,7 +15,7 @@ public class Fw_GameManager : Wf_SingletonPattern_Mono<Fw_GameManager>
     public string n1, n2, n3;
 
     [HorizontalGroup("PlayerDate/Group_1",0.5f, LabelWidth = 50)]
-    [TabGroup("PlayerDate/Group_1/Group_2", "×é¼þ")]
+    [TabGroup("PlayerDate/Group_1/Group_2", "ç»„ä»¶")]
     public Transform Tr21, Tr22, Tr23;
 
     [TabGroup("PlayerDate/Group_1/Group_2", "CS")]

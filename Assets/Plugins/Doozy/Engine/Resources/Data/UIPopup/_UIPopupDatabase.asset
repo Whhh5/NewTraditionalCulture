@@ -13,14 +13,8 @@ MonoBehaviour:
   m_Name: _UIPopupDatabase
   m_EditorClassIdentifier: 
   PopupNames:
-  - pushment
-  - Completed
-  - Defeat
-  - FakeUpdate
-  - Setting
+  - Gaming Setting
+  - Start Setting
   Popups:
-  - {fileID: 11400000, guid: d12ad95b1d00cd0468b6be98b1ca5b5c, type: 2}
-  - {fileID: 11400000, guid: 024c88250b492724a88db2b3998cc712, type: 2}
-  - {fileID: 11400000, guid: 55ba4886140c199468f8ac4512ac7c30, type: 2}
-  - {fileID: 11400000, guid: c8d4d548f6060d142af4bf99a82e792f, type: 2}
-  - {fileID: 11400000, guid: 095c2e5a1d74cba44844c232e1e40b35, type: 2}
+  - {fileID: 11400000, guid: fc0122e699f57c74dac3eaa837bf7223, type: 2}
+  - {fileID: 11400000, guid: b11be17568214854880fde5a969f532b, type: 2}

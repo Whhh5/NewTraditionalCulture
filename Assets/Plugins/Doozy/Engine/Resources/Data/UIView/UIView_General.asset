@@ -16,9 +16,6 @@ MonoBehaviour:
   DatabaseType: 2
   Names:
   - Unnamed
-  - Loading
+  - Start
   - Main Menu
   - Gaming
-  - SelectLevel
-  - RunningAndStop
-  - Status

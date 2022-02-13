@@ -16,9 +16,5 @@ MonoBehaviour:
   CategoryNames:
   - Custom
   - General
-  - My_View-Gaming
-  - My_View-Loading
   Categories:
   - {fileID: 11400000, guid: 8ee2ba7952753a54183c94ec39b202b9, type: 2}
-  - {fileID: 11400000, guid: 77317b1b1bdd0aa4093ad8c809c1a51a, type: 2}
-  - {fileID: 11400000, guid: 2873e915743639c4a8e0c550359170d2, type: 2}

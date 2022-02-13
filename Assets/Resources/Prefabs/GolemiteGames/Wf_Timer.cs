@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
@@ -18,6 +19,11 @@ public class Wf_Timer : MonoBehaviour
 
     private float _residueTime;
     bool isRun = false;
+
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
 
     private float residueTime
     {

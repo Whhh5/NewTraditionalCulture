@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17215f689fb19554ab6b81c2308113df, type: 3}
-  m_Name: UIPopupLink_pushment
+  m_Script: {fileID: 11500000, guid: f42f06ff6cc543ea942180e019f0fc8d, type: 3}
+  m_Name: UIButton_Setting
   m_EditorClassIdentifier: 
-  PopupName: pushment
-  Prefab: {fileID: 7549679326783784367, guid: 4f4d400c70342ca4fb15a4e918d927b1, type: 3}
+  CategoryName: Setting
+  DatabaseType: 0
+  Names:
+  - Add Volume
+  - Cancel Game
+  - Remove Volume
+  - Return Game

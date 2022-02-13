@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f42f06ff6cc543ea942180e019f0fc8d, type: 3}
-  m_Name: UIView_My_View-Loading
+  m_Script: {fileID: 11500000, guid: 17215f689fb19554ab6b81c2308113df, type: 3}
+  m_Name: UIPopupLink_Gaming Setting
   m_EditorClassIdentifier: 
-  CategoryName: My_View-Loading
-  DatabaseType: 2
-  Names: []
+  PopupName: Gaming Setting
+  Prefab: {fileID: 1575943513540056197, guid: fe1afca47adbfe74887f163d2a9663bd, type: 3}

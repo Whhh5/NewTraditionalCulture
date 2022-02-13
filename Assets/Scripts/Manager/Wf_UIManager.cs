@@ -4,7 +4,7 @@ using UnityEngine;
 using Doozy.Engine.UI;
 using Sirenix.OdinInspector;
 
-public class Fw_UIManager : Wf_SingletonPattern_Serialized<Fw_UIManager>
+public class Wf_UIManager : Wf_SingletonPattern_Serialized<Wf_UIManager>
 {
 
 

@@ -16,7 +16,7 @@ MonoBehaviour:
   DatabaseType: 0
   Names:
   - Back
-  - No
-  - Play
+  - Quit Game
+  - Setting
   - Start Game
   - Unnamed

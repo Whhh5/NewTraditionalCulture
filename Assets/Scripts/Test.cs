@@ -98,23 +98,24 @@ public class Test : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Alpha1))
         {
+            //Wf_Tools.Instance.my_Timer.gameObject.SetActive(true);
             Wf_Tools.Instance.my_Timer.StartTime(10, Wf_Tools.Instance.my_Timer.gameObject.GetComponent<RectTransform>().anchoredPosition);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            
+            Wf_FactoryPattern.Instance.ShowPopup("Start Setting");
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            
+            Wf_FactoryPattern.Instance.ShowPopup("Gaming Setting");
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            
+            Wf_FactoryPattern.Instance.HidePopup("Start Setting");
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-
+            Wf_FactoryPattern.Instance.HidePopup("Gaming Setting");
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
