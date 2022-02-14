@@ -18,6 +18,9 @@ namespace Wf_Item
 
         public GameObject wf_model;
 
+        public Transform wf_startTr;
+        public Transform wf_endTr;
+
         [TextArea]
         public string wf_information;
 
@@ -64,11 +67,10 @@ namespace Wf_Item
     [CreateAssetMenu(fileName = "New ChildLevelItem", menuName = "Inventory/New ChildLevelItem")]
     public class Wf_ChildLevelItem : ScriptableObject
     {
-        [TitleGroup("µÿÕº")]
+        [TitleGroup("Âú∞Âõæ")]
         public List<GameObject> wf_capnodes = new List<GameObject>();
 
-        [TitleGroup("µ¿æﬂ")]
+        [TitleGroup("ÈÅìÂÖ∑")]
         public List<wf_Sturct_GbAndIndex> wf_posps = new List<wf_Sturct_GbAndIndex>();
-
     }
 }

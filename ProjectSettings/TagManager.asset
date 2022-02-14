@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - WheelCollider
+  - Test
   layers:
   - Default
   - TransparentFX
@@ -17,7 +17,7 @@ TagManager:
   - Prop
   - Door
   - Ground
-  - WheelTarget
+  - 
   - 
   - 
   - 

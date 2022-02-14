@@ -52,7 +52,7 @@ namespace Wf_Assist_Cs
     #region      ------------  Tools  ------------------
     public class Fw_ToolsFunction
     {
-        #region  ----------------  ÅÐ¶ÏÊÇ·ñ³¬³öÁË×î´ó×îÐ¡·¶Î§ --------------------
+        #region  ----------------  åˆ¤æ–­æ˜¯å¦è¶…å‡ºäº†æœ€å¤§æœ€å°èŒƒå›´ --------------------
         public void ToMinMaxGoBack(float value, float min,float max)
         {
             if (value > max)

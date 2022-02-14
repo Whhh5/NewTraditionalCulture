@@ -119,7 +119,7 @@ public class Test : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            
+            Debug.Log(GetComponent<BoxCollider>());
         }
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {

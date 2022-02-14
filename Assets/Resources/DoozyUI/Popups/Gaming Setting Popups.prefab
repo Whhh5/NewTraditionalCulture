@@ -3129,7 +3129,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.6
     LoadSelectedPresetAtRuntime: 1
     InstantAnimation: 0
     OnFinished:
@@ -3173,7 +3173,7 @@ MonoBehaviour:
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Fade
-    PresetName: OutNormal
+    PresetName: OutSlow
   HideOnAnyButton: 0
   HideOnBackButton: 1
   HideOnClickAnywhere: 0
@@ -3214,10 +3214,10 @@ MonoBehaviour:
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
-        Direction: 0
+        Direction: 2
         CustomPosition: {x: 0, y: 0, z: 0}
         EaseType: 0
-        Ease: 2
+        Ease: 17
         AnimationCurve:
           serializedVersion: 2
           m_Curve:
@@ -3270,11 +3270,11 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.6
+        Duration: 0.5
       Rotate:
         AnimationType: 1
         Enabled: 1
-        From: {x: 0, y: 90, z: 45}
+        From: {x: 0, y: 0, z: -60}
         To: {x: 0, y: 0, z: 0}
         By: {x: 0, y: 0, z: 0}
         UseCustomFromAndTo: 0
@@ -3284,7 +3284,7 @@ MonoBehaviour:
         LoopType: 1
         RotateMode: 0
         EaseType: 0
-        Ease: 3
+        Ease: 17
         AnimationCurve:
           serializedVersion: 2
           m_Curve:
@@ -3367,8 +3367,8 @@ MonoBehaviour:
         Duration: 0.5
       Scale:
         AnimationType: 1
-        Enabled: 1
-        From: {x: 0, y: 0, z: 0}
+        Enabled: 0
+        From: {x: 2, y: 2, z: 1}
         To: {x: 0, y: 0, z: 0}
         By: {x: 0, y: 0, z: 0}
         UseCustomFromAndTo: 0
@@ -3377,7 +3377,7 @@ MonoBehaviour:
         NumberOfLoops: -1
         LoopType: 1
         EaseType: 0
-        Ease: 4
+        Ease: 26
         AnimationCurve:
           serializedVersion: 2
           m_Curve:
@@ -3430,11 +3430,11 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 1
-        Enabled: 1
-        From: 0
+        Enabled: 0
+        From: 1
         To: 1
         By: 0.5
         UseCustomFromAndTo: 0
@@ -3448,8 +3448,8 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.2
-        Duration: 0.3
+        StartDelay: 0
+        Duration: 0.4
     LoadSelectedPresetAtRuntime: 1
     InstantAnimation: 0
     OnFinished:
@@ -3493,7 +3493,7 @@ MonoBehaviour:
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Basic
-    PresetName: SailLeft
+    PresetName: FallRotateRight
   ShowProgressor: {fileID: 0}
   UpdateHideProgressorOnShow: 0
   UpdateShowProgressorOnHide: 0

@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Doozy.Engine.UI;
+using UnityEngine;
+using Wf_Item;
 
 public class Wf_FactoryPattern : Wf_SingletonPattern_Mono<Wf_FactoryPattern>
 {
@@ -41,7 +40,23 @@ public class Wf_FactoryPattern : Wf_SingletonPattern_Mono<Wf_FactoryPattern>
     }
     #endregion
 
+    #region Create CapNode
 
+    public Wf_CapNodeController Wf_CarateCapNode(Wf_CapNodeItem item)
+    {
+        GameObject tempModel = Wf_ObjectPool.Instance.Wf_GetObject(item.wf_model);
+        
+        tempModel.transform.SetParent(Wf_GameManager.Instance.wf_onLoadScene_Des);
+
+        tempModel.GetComponent<Wf_CapNodeController>().wf_item = item;
+        
+        Wf_GameManager.Instance.wf_CapNode.Add(tempModel);
+            
+        return tempModel.GetComponent<Wf_CapNodeController>();
+    }
+    
+
+    #endregion
 
 
 
