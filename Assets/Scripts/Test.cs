@@ -6,6 +6,7 @@ using Sirenix.OdinInspector;
 using Wf_Assist_Cs;
 using Doozy.Engine.UI;
 using DG.Tweening;
+using System;
 
 public class Test : MonoBehaviour
 {
@@ -85,11 +86,17 @@ public class Test : MonoBehaviour
 
     //}
 
+    List<int> inn = new List<int>();
     private void Start()
     {
         //Debug.Log(Time.timeScale);
         //Time.timeScale = 0;
         //Debug.Log(Time.timeScale);
+
+        for (int i = 0; i < 5; i++)
+        {
+            inn.Add(i);
+        }
     }
 
 
@@ -119,11 +126,13 @@ public class Test : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            Debug.Log(GetComponent<BoxCollider>());
+            
         }
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
-            //transform.DOAnchorPos3D()
+            int temp = UnityEngine.Random.Range(0, 2);
+
+            Debug.Log(UnityEngine.Random.Range(0, 2));
         }
     }
 }

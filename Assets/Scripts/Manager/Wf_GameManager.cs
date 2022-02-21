@@ -4,21 +4,25 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using Wf_Assist_Cs;
-using Wf_Item;
 
 public class Wf_GameManager : Wf_SingletonPattern_Mono<Wf_GameManager>
 {
     [TitleGroup("PlayerDate")]
     [HorizontalGroup("PlayerDate/Group_1", Width = 0.5f, LabelWidth = 50)]
     [TabGroup("PlayerDate/Group_1/Group_1", "A")]
-    public Transform Tr1, Tr2, Tr3;
+    public GameObject wf_player;
+    [TabGroup("PlayerDate/Group_1/Group_1", "A")]
+    public PlayerController wf_playerController;
+    [TabGroup("PlayerDate/Group_1/Group_1", "A")]
+    [Range(0,500000)]
+    public float speed, jump;
 
     [TabGroup("PlayerDate/Group_1/Group_1", "B")]
-    public string n1, n2, n3;
+    public LayerMask wf_mask;
 
     [HorizontalGroup("PlayerDate/Group_1",0.5f, LabelWidth = 50)]
     [TabGroup("PlayerDate/Group_1/Group_2", "组件")]
-    public Transform Tr21, Tr22, Tr23;
+    public Transform wf_cameraTarget;
 
     [TabGroup("PlayerDate/Group_1/Group_2", "CS")]
     public string n21, n22, n23;
@@ -26,19 +30,19 @@ public class Wf_GameManager : Wf_SingletonPattern_Mono<Wf_GameManager>
 
 
 
-    [TitleGroup("PlayerDate2")]
-    [HorizontalGroup("PlayerDate2/Group_1", Width = 0.5f, LabelWidth = 50)]
-    [TabGroup("PlayerDate2/Group_1/Group_1", "A")]
-    public Transform Tr31, Tr32, Tr33;
+    [TitleGroup("成语")]
+    [HorizontalGroup("成语/Group_1", Width = 0.5f, LabelWidth = 50)]
+    [TabGroup("成语/Group_1/Group_1", "A")]
+    public Wf_IdiomItem wf_idiom;
 
-    [TabGroup("PlayerDate2/Group_1/Group_1", "B")]
+    [TabGroup("成语/Group_1/Group_1", "B")]
     public string n31, n32, n33;
 
-    [HorizontalGroup("PlayerDate2/Group_1", LabelWidth = 50)]
-    [TabGroup("PlayerDate2/Group_1/Group_2", "A")]
+    [HorizontalGroup("成语/Group_1", LabelWidth = 50)]
+    [TabGroup("成语/Group_1/Group_2", "A")]
     public Transform Tr231, Tr232, Tr233;
 
-    [TabGroup("PlayerDate2/Group_1/Group_2", "B")]
+    [TabGroup("成语/Group_1/Group_2", "B")]
     public string n231, n232, n233;
 
 
@@ -85,5 +89,6 @@ public class Wf_GameManager : Wf_SingletonPattern_Mono<Wf_GameManager>
     public List<Wf_CapNodeItem> wf_capNodeItems = new List<Wf_CapNodeItem>();
     
     [TabGroup("Create/Group_1/Group_1", "Gaming")] 
-    public List<GameObject> wf_CapNode = new List<GameObject>();
+    public List<GameObject> wf_capNode = new List<GameObject>();
+    public Dictionary<GameObject,int> wf_capNodeMap = new Dictionary<GameObject, int>();
 }

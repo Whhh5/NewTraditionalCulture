@@ -19,20 +19,34 @@ namespace Wf_Assist_Cs
 
     public enum Wf_Enum_CapNodeType
     {
-        None = 0,
-        front,
-        left,
-        right,
+        front = 0,
+        left = -90,
+        right = 90,
+    }
+
+    public enum Wf_Enum_CapNodeCreateFunction
+    {
+        system,
+        setting,
     }
     #endregion
 
 
     #region     ------------  Sturct  ------------------
-        [System.Serializable]
+    [System.Serializable]
     public struct wf_Sturct_GbAndIndex
     {
         [HorizontalGroup("gameObject", MinWidth = 0.2f,MaxWidth = 0.7f,LabelWidth = 40)]
         public GameObject wf_gb;
+        [HorizontalGroup("gameObject"), HideLabel]
+        public int wf_index;
+    }
+
+    [System.Serializable]
+    public struct wf_Sturct_CreateCapnode
+    {
+        [HorizontalGroup("gameObject", MinWidth = 0.2f, MaxWidth = 0.7f, LabelWidth = 40)]
+        public Wf_CapNodeItem wf_item;
         [HorizontalGroup("gameObject"), HideLabel]
         public int wf_index;
     }

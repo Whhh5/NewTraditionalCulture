@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Wf_ObjectPool : Wf_SingletonPattern_Mono<Wf_ObjectPool>
 {
-    private List<GameObject> wf_capNode;
+    private List<GameObject> wf_capNode = new List<GameObject>();
     private Dictionary<GameObject, List<GameObject>> wf_pool = new Dictionary<GameObject, List<GameObject>>();
 
     private void Wf_Initialization() 
@@ -16,7 +16,7 @@ public class Wf_ObjectPool : Wf_SingletonPattern_Mono<Wf_ObjectPool>
 
             GameObject tempGb = Instantiate(wf_capNode[i]);
             tempList.Add(tempGb);
-            wf_pool.Add(wf_capNode[i],tempList);
+            wf_pool.Add(tempGb, tempList);
             tempGb.SetActive(false);
         }
         Debug.Log("---------   " + wf_capNode.Count + "       对象池与加载完成");
@@ -24,7 +24,7 @@ public class Wf_ObjectPool : Wf_SingletonPattern_Mono<Wf_ObjectPool>
 
     public GameObject Wf_GetObject(GameObject gb)
     {
-        GameObject tempGb = new GameObject();
+        GameObject tempGb;
         if (wf_pool.ContainsKey(gb))
         {
             tempGb = wf_pool[gb][0];

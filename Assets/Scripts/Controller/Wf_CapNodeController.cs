@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Mathematics;
 using UnityEngine;
-using Wf_Item;
 
 public class Wf_CapNodeController : MonoBehaviour
 {
@@ -36,13 +35,10 @@ public class Wf_CapNodeController : MonoBehaviour
         transform.position += pos;
         transform.DOMove(tempPos, time, false);
     }
-
+    
     private void OnEnable()
     {
-        if (GetComponent<BoxCollider>().enabled != true)
-        {
-            GetComponent<BoxCollider>().enabled = true;
-        }
+        GetComponent<BoxCollider>().enabled = false;
     }
 
     private void Update()
@@ -68,19 +64,23 @@ public class Wf_CapNodeController : MonoBehaviour
 
     private void Wf_Enter()
     {
+        Wf_GameManager.Instance.wf_playerController.Wf_Turning((float)wf_item.wf_type);
+        //开启下一个碰撞器
+        if (Wf_GameManager.Instance.wf_capNode.Count > Wf_GameManager.Instance.wf_capNodeMap[gameObject] + 1)
+        {
+            Wf_GameManager.Instance.wf_capNode[Wf_GameManager.Instance.wf_capNodeMap[gameObject] + 1].GetComponent<BoxCollider>().enabled = true;
+        }
         
+
     }
     private void Wf_Exit()
     {
         GetComponent<BoxCollider>().enabled = false;
-        transform.DOMove(transform.position - Wf_GameManager.Instance.wf_capAnimationStartPos,
+        transform.DOMove(transform.position + Wf_GameManager.Instance.wf_capAnimationStartPos,
             Wf_GameManager.Instance.wf_capMoveTime, false)
             .OnComplete((()=>
         {
             Wf_ObjectPool.Instance.Wf_RemoveObject(gameObject);
         }));
-        
-        Debug.Log("2");
     }
-    
 }

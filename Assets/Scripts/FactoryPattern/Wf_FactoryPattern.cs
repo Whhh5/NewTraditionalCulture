@@ -1,6 +1,6 @@
 using Doozy.Engine.UI;
 using UnityEngine;
-using Wf_Item;
+using UnityEngine.UI;
 
 public class Wf_FactoryPattern : Wf_SingletonPattern_Mono<Wf_FactoryPattern>
 {
@@ -41,7 +41,6 @@ public class Wf_FactoryPattern : Wf_SingletonPattern_Mono<Wf_FactoryPattern>
     #endregion
 
     #region Create CapNode
-
     public Wf_CapNodeController Wf_CarateCapNode(Wf_CapNodeItem item)
     {
         GameObject tempModel = Wf_ObjectPool.Instance.Wf_GetObject(item.wf_model);
@@ -50,17 +49,22 @@ public class Wf_FactoryPattern : Wf_SingletonPattern_Mono<Wf_FactoryPattern>
 
         tempModel.GetComponent<Wf_CapNodeController>().wf_item = item;
         
-        Wf_GameManager.Instance.wf_CapNode.Add(tempModel);
-            
+        Wf_GameManager.Instance.wf_capNode.Add(tempModel);
+
+        Wf_GameManager.Instance.wf_capNodeMap.Add(tempModel, Wf_GameManager.Instance.wf_capNode.Count - 1);
+
         return tempModel.GetComponent<Wf_CapNodeController>();
     }
-    
-
     #endregion
 
-
-
-
+    #region Create Idiom
+    public Text Wf_CarateIdiom(Wf_IdiomItem item)
+    {
+        GameObject tempModel = Wf_ObjectPool.Instance.Wf_GetObject(item.wf_model);
+        tempModel.transform.SetParent(Wf_UIManager.Instance.wf_idiomParent);
+        return tempModel.transform.Find("Text").GetComponent<Text>();
+    }
+    #endregion
 
 
     #region "���ɵ�ͼ"
